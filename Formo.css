@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: rgb(216, 213, 213);
+    font-family: "Poppins", sans-serif;
+}
+
+.header {
+    background-image: linear-gradient(
+         rgba(255, 255, 255, 0.7),
+         rgba(0, 0, 0, 0.7)),
+         url(ImagenConst/sirve7.jpg);
+         background-position: center bottom;
+         background-repeat: no-repeat;
+         background-size: cover;
+         min-height: 70vh;
+         display: flex;
+         align-items: center;
+}
+
+.menu{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 176px;
+    height: 162px;
+    float: left;
+    margin-left: 21px;
+}
+
+.logo img:hover{
+    filter:invert(70%);
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+    list-style: none;
+    margin-bottom: 90px;
+}
+
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #070707;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(238, 236, 236);
+}
+
+
+#menu {
+    display:none;
+}
+
+#menu-icono {
+    width: 10px;
+    height: 12px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    text-align:center ;
+}
+
+.header-content h1{
+font-size: 75px;
+line-height: 80px;
+color: #F9FAFC;
+text-transform: uppercase;
+margin-bottom: 35px;
+}
+
+
+.header-content p{
+    font-size: 16px;
+    color:#f5f1f1 ;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+.form-register {
+    width: 500px;
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    margin:auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: antiquewhite;
+    box-shadow: 7px 13px 37px #000;
+}
+
+.form-register h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.controls {
+    width: 100%;
+    background: rgb(177, 177, 177);
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid maroon;
+    font-size: 18px;
+}
+
+.form-register p{
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    color: #000000;
+}
+
+.form-register .submitt{
+    color: #4300fc;
+} 
+
+.form-register a{
+    color: rgb(7, 7, 7);
+    text-decoration: none;
+}
+
+.form-register a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+.form-register .botons{
+    width: 100%;
+    background: rgb(233, 106, 21);
+    border: none;
+    padding: 12px;
+    color: rgb(0, 0, 0);
+    margin: 16px;
+    font-size: 16px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+label input[type="text"], textarea{
+    width: 90%;
+    padding: 10Px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+    

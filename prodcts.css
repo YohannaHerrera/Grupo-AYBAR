@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+body{
+    background: rgb(241, 236, 228);
+    font-family: "Poppins", sans-serif; 
+}
+
+.header {
+         background-position: center bottom;
+         background-repeat: no-repeat;
+         background-size: cover;
+         min-height: 450px;
+         display: flex;
+         align-items: center;
+
+    position: relative;
+    display:grid ;
+    grid-template-rows:200px 1fr ;
+    color: #000000;
+}
+
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.menu{
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 145px;
+    height: 155px;
+    float: left;
+    margin-left: 12px;
+}
+
+.logo img:hover{
+    filter:invert(70%);
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+    list-style: none;
+}
+
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #000000;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: rgb(231, 153, 51);
+}
+
+
+#menu {
+    display:block;
+}
+
+#menu-icono {
+    width: 10px;
+    height: 12px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    text-align:center ;
+}
+
+.header-content h1{
+font-size: 60px;
+line-height: 80px;
+color: #F9FAFC;
+text-transform: uppercase;
+margin-bottom: 35px;
+margin-top: 256px;
+}
+
+
+.header-content p{
+    font-size: 16px;
+    color:#f5f1f1 ;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+
+.Slider{
+    width: 100%;
+     height: 900px;
+     overflow: hidden;
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: -1;
+    }
+    
+    .Slider ul{
+        display: flex;
+        animation: cambio 15s infinite alternate linear;
+        width: 400%;
+    }
+    
+    .Slider li {
+        width: 100%;
+        list-style: none;
+    }
+    
+    .Slider img{
+        width: 100%;
+        height: 100%;
+    }
+    
+
+#contenedor{
+   background: white;
+    margin: 0 auto;
+}
+#contenedor h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#contenedor p{
+    margin-bottom: 20px;
+    font-size: 17px;
+    text-align: center;
+
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galeria p {
+    margin-top: 6px;
+    text-align: center;
+    color: #20005c;
+    font-size: 18px;
+    font-family: Arial;
+    font-weight: bold;
+    transition: all 200ms;}
+
+.galeria p:hover{
+    transform: scale(1.15);
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+.galeria{
+    grid-template-columns: repeat(6, 1fr);
+    width: 90%;
+    margin: 5%;
+    grid-gap:30px;
+    justify-content: center;
+}
+
+.galeria img {
+    width: 100%;
+    transition: all 300ms;
+    position: relative;
+}
+
+.galeria img:hover{
+    transform: scale(1.19);
+}
+
+/*CONTENIDO*/
+
+
+.img-izq{
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    border: 2px inset rgb(0, 0, 0);
+    padding: 5px;
+
+}
+
+/*CONTENIDO*/
+
+
+
+.footer{
+    padding: 45px;
+    background-color: #000000;
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer p{
+    text-align: auto;
+    font-size: 14px;
+    color:white ;
+}
+
+.footer img{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
+.footer ul{
+    display: flex;
+}
+
+
+
+.header h1{
+    text-align: center;
+    font-size: 76px;
+    color: #e99a32;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 8px 8px 9px
+    rgba(0, 0, 0, 0.3);
+    -webkit-text-stroke: 0.1px rgb(0, 0, 0);
+    background: #c8c6ca;
+    padding: 0.2em;
+}
+
+
+h2{
+    text-align: center;
+    background-color: rgb(245, 204, 150);
+    margin-top: 23px; 
+
+}
+
+
+/*KEYFRAMES*/
+
+@keyframes entradalogo {
+    0%{
+        transform: translateY(-200px) ;
+    }
+}
+
+@keyframes rotacion {
+
+    0%{
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes cambio{
+    0% { margin-left:0;}
+    20% { margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left:-300%;}
+
+}
+
+
+/*KEYFRAMES*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: rgb(241, 236, 228);
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+
+#logo{
+    width: 320px;
+    float: left;
+    margin-top: 20px;
+    margin-left:20px ;
+    animation: 1s entradalogo 1;
+}
+
+#logo img:hover {
+    filter: blur(2px);
+}
+
+
+#logo img{
+    width: 250px;
+    height: 100px;
+}
+
+/*CABECERA*/
+
+
+
+/*Menu horizontal*/
+#menu-h {
+    background: rgb(0, 0, 0);
+    margin: 0 auto;
+   
+}
+
+#menu-h ul{
+    list-style: none;
+    display: flex;
+    justify-content:right ;
+}
+
+
+#menu-h a {
+    color: #fff;
+    display: flex;
+    padding: 20px;
+    text-decoration: none;
+    background: #000;
+    font-size: 18px;
+    
+}
+
+
+#menu-h a:hover {
+    background: rgb(255, 102, 0); 
+    border-radius: 35px;
+}
+
+#menu-h ul ul {
+    display: none;
+    position: absolute;
+}
+
+#menu-h ul li:hover ul{
+    display: block;
+
+}
+
+/*Menu horizontal*/
+
+
+#banner{
+    max-width: 1700px;
+    min-height: 450px;
+    background: rgb(252, 252, 252);
+    margin: 0 auto;
+}
+
+
+#contenedor{
+    max-width: 1700px;
+    min-height: 980px;
+   background: white;
+    margin: 0 auto;
+}
+#contenedor h1{
+    text-align: center;
+    margin-top: 10px;
+    font-family:'Times New Roman', Times, serif
+}
+
+.Slider{
+    width: 100%;
+     height: 600px;
+     overflow: hidden;
+    }
+    
+    .Slider ul{
+        display: flex;
+        animation: cambio 15s infinite alternate linear;
+        width: 400%;
+    }
+    
+    .Slider li {
+        width: 100%;
+        list-style: none;
+    }
+    
+    .Slider img{
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+
+/*CONTENIDO*/
+
+#contenido h1{
+    background-color: antiquewhite;
+    text-align: center;
+    margin-bottom: 28px;
+    font-size: 28px;
+}
+
+#contenido img{
+    margin: 15px;
+    width: 270px;
+    height: 180px;
+    border-radius: 15px;
+}
+
+
+
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.galeria p {
+    margin-top: 6px;
+    text-align: center;
+    color: #20005c;
+    font-size: 18px;
+    font-family: Arial;
+    font-weight: bold;
+    transition: all 300ms;
+}
+
+.galeria p:hover{
+    transform: scale(1.15);
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+
+.galeria{
+    grid-template-columns: repeat(6, 1fr);
+    width: 90%;
+    margin: 5%;
+    grid-gap:30px;
+    justify-content: center;
+}
+
+.galeria img {
+    width: 100%;
+    transition: all 300ms;
+    position: relative;
+}
+
+.galeria img:hover{
+    transform: scale(1.19);
+}
+
+
+
+/*CONTENIDO*/
+
+
+
+/*PIE DE PAGINA*/
+
+.footer{
+    padding: 45px;
+    background-color: #000000;
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer p{
+    text-align: auto;
+    font-size: 14px;
+    color:white ;
+}
+
+.footer img{
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+}
+
+.footer ul{
+    display: flex;
+}
+/*PIE DE PAGINA*/
+
+ 
+
+
+/*KEYFRAMES*/
+
+@keyframes entradalogo {
+    0%{
+        transform: translateY(-200px) ;
+    }
+}
+
+@keyframes rotacion {
+
+    0%{
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes cambio{
+    0% { margin-left:0;}
+    20% { margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% {margin-left: -300%;}
+    100% {margin-left:-300%;}
+
+}
+
+
+/*KEYFRAMES*/
